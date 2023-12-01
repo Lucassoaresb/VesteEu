@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Roupas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de Roupas</h1>
+      <form id="roupaForm" onsubmit="event.preventDefault(); cadastrarRoupa();">
+        <label for="roupa">Marca:</label>
+        <input type="text" id="roupa" required />
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" required></textarea>
+
+        <button type="submit">Cadastrar Roupa</button>
+      </form>
+
+      <h2>Roupas Disponíveis</h2>
+      <ul id="listaRoupas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
